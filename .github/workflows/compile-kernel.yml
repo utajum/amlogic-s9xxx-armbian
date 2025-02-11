@@ -153,6 +153,7 @@ jobs:
           kernel_sign: ${{ inputs.kernel_sign }}
           kernel_toolchain: ${{ inputs.kernel_toolchain }}
           compress_format: ${{ inputs.compress_format }}
+          kernel_patch: "compile-kernel/tools/patch"
 
       - name: Upload Kernel to Release
         uses: ncipollo/release-action@main
